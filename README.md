@@ -49,7 +49,7 @@ Installation
 
 Clone this repository:
 
-git clone https://github.com/IR-Designing/todo-list-app.git
+git clone https://IR-Designing.github.io/todo-list-app.git
 
 Navigate to the project directory:
 
