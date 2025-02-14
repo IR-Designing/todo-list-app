@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(#ff933b, #20aca7);;
+    /* background: url(bg-1.jpg) no-repeat center cover; */
+    height: 100vh;
+}
+
+.section {
+    width: 90%;
+    margin: auto;
+    height: auto;
+    background: #4a4b4b;
+    display: flex;
+    border-radius: 6px;
+    justify-content: center;
+    flex-direction: column;
+    backdrop-filter: blur(57px);
+}
+nav{
+    display: flex;
+    width: auto;
+    height: 66px;
+    background: #3939398a;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    padding: 2rem 0rem;
+    color: #f01414;
+    font-family: "Teko";
+    letter-spacing: 2px;
+    font-size: 3rem;
+    text-shadow: 1px 1px 35px #f01414;
+}
+span{
+    padding: 2rem 0rem;
+    color: #14e0f0;
+    font-family: "Teko";
+    letter-spacing: 2px;
+    font-size: 3rem;
+    text-shadow: 1px 1px 35px #14e0f0;
+}
+
+.main {
+    height: 13rem;
+    text-align: center;
+}
+
+h1 {
+    padding: 2rem 0rem;
+    color: #14e0f0;
+    font-family: "Teko";
+    letter-spacing: 2px;
+    font-size: 3rem;
+    text-shadow: 1px 1px 35px #03f3ff;
+}
+
+form {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#input-text {
+    font-size: 1.6rem;
+    width: 31rem;
+    height: 3rem;
+    left: 4rem;
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #14e0f0;
+    border-radius: 8px;
+    font-family: "Roboto Condensed";
+    color: white;
+    font-weight: 600;
+    padding: 0px 12px;
+}
+.checkbox{
+    width: 28px;
+    height: 58px;
+}
+
+.sub-btn {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+    right: 4rem;
+    height: 3rem;
+    width: 12rem;
+    border-radius: 8px;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(9 167 201);
+    background-image: linear-gradient(to top left, 
+                    rgb(0 0 0 / 20%),
+                    rgb(0 0 0 / 20%) 30%, 
+                    rgb(0 0 0 / 0%));
+    box-shadow: inset 2px 2px 3px rgb(255 255 255 / 60%), 
+                inset -2px -2px 3px rgb(0 0 0 / 60%);
+    font-family: "Roboto Condensed";
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+#delete-all-btn{
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+    right: 4rem;
+    height: 2rem;
+    width: 7rem;
+    border-radius: 8px;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(201 9 62);
+    background-image: linear-gradient(to top left, rgb(0 0 0 / 20%), rgb(0 0 0 / 20%) 30%, rgb(0 0 0 / 0%));
+    box-shadow: inset 2px 2px 3px rgb(255 255 255 / 60%), inset -2px -2px 3px rgb(0 0 0 / 60%);
+    font-family: "Roboto Condensed";
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+#delete-all-btn:hover{
+    background-color: rgb(242, 4, 71);;
+}
+
+.sub-btn:hover{
+    background-color: rgb(7, 191, 233);
+    background-image: linear-gradient(to top left,
+            rgb(0 0 0 / 20%), rgb(0 0 0 / 20%) 30%,
+            rgb(0 0 0 / 0%));
+    box-shadow: inset 2px 2px 3px rgb(255 255 255 / 60%),
+        inset -2px -2px 3px rgb(0 0 0 / 60%);
+}
+
+.task-in {
+    display: flex;
+    flex-direction: column;
+    width: 102%;
+    height: auto;
+    align-items: center;
+    border-radius: 8px;
+    margin: auto;
+}
+
+.task {
+    margin: 1rem 0rem;
+    height: 4rem;
+    width: 93%;
+    background: #004761;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 8px;
+}
+
+.task-in p {
+    color: #fffafa;
+    width: 49rem;
+    padding: 0.5rem;
+    margin: 1px 17px;
+    border-radius: 6px;
+    font-family: "Roboto Condensed";
+    font-size: 1.4rem;
+    background: #000000;
+}
+.task-summary{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 45rem;
+    height: 5rem;
+    color: white;
+    font-family: "Roboto Condensed";
+}
+
+.edit-btn {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 10px;
+    background: #38cea7;
+    cursor: pointer;
+}
+.save-btn {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 10px;
+    background: orange;
+    cursor: pointer;
+}
+
+
+.bx {
+    font-size: 2.5rem;
+}
+
+.del-btn {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 10px;
+    background: rgb(255 0 0);
+    cursor: pointer;
+}
+
+#select-all{
+    width: 4.5rem;
+    height: 1.3rem;
+    text-align: center;
+    font-family: "Roboto Condensed";
+}
+.select-all-check{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 4rem;
+    width: 7rem;
+    flex-direction: column;
+    font-family: "Roboto Condensed";
+}
+
+@media (max-width: 787px) {
+
+    .sub-btn {
+        height: 2rem;
+        width: 7rem;
+        margin-right: 5rem;
+        font-size: 0.9rem;
+
+    }
+    .section{
+        width: 100%;
+    }
+    nav{
+        display: flex;
+            width: 100%;
+            height: 66px;
+            background: #3939398a;
+            align-items: center;
+            justify-content: center;
+    }
+    .task-summary{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #input-text {
+        margin: 0rem 2rem;
+        width: 25rem;
+        border-radius: 8px;
+        padding: 0px 14px;
+        font-size: 1.3rem;
+    }
+
+    .task-in p {
+        width: 29rem;
+    }
+
+    .del-btn,
+    .edit-btn {
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+
+    .del-btn::before,
+    .edit-btn::before,
+    .save-btn::before {
+        width: 2rem;
+        height: 2rem;
+        transform: translate(-17px, -17px);
+    }
+    #delete-all-btn{
+        width: 5rem;
+        margin-left: 14px;
+    }
+
+}
+
+
+
+@media (max-width: 469px) {
+
+
+    .edit-btn {
+        margin-left: -8rem;
+    }
+
+    .section{
+        width: 93%;
+    }
+    #delete-all-btn{
+        width: 5rem;
+        margin-left: 14px;
+    }
+
+    #input-text {
+        margin-left: 2rem;
+        width: 15rem;
+        border-radius: 8px;
+        padding: 0px 11px;
+        font-size: 1.3rem;
+    }
+    .bx{
+        font-size: 1.5rem;
+    }
+
+    .edit-btn,
+    .del-btn,
+    .save-btn {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    .edit-btn::before,
+    .del-btn::before,
+    .save-btn::before {
+        width: 2rem;
+        height: 2rem;
+        transform: translate(-17px, -17px);
+
+    }
+
+    h1 {
+        padding: 0rem;
+        width: 22rem;
+    }
+
+    .sub-btn {
+        padding: 0rem 1rem;
+        margin-left: 1rem;
+    }
+
+    h1 {
+        padding: 1rem;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .task-in p {
+        width: 12rem;
+        padding: 4px 9px;
+        margin-right: 9rem;
+        font-size: 1rem;
+    }
+    .task-summary{
+        width: 100%;
+    }
+    .checkbox{
+        width: 17px;
+        height: 50px;
+        margin-left: 9px;
+    }
+}
+
+@media (max-width: 396px) {
+    h2{
+        width: auto;
+        margin: 0rem 3rem;
+        padding: 0px 12px;
+        font-size: 1.5rem;
+    }
+    h1 {
+        padding: 0rem;
+        width: 16rem;
+        margin: auto;
+    }
+    span{
+      
+        font-size: 1.5rem;
+    }
+    .section{
+        width: 107%;
+    }
+
+    .sub-btn {
+        margin: 1rem 7rem;
+    }
+    .bx{
+        font-size: 1.5rem;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .edit-btn,
+    .del-btn,
+    .save-btn {
+        height: 2rem;
+        width: 2rem;
+    }
+    .edit-btn::before,
+    .del-btn::before,
+    .save-btn::before {
+        width: 1.5rem;
+        height: 1.5rem;
+        transform: translate(-13px, -13px);
+    }
+
+    #input-text {
+        width: auto;
+        margin: 0rem 3rem;
+        padding: 0px 12px;
+        font-size: 1rem;
+    }
+
+    .task-in p {
+        width: 9rem;
+        padding: 6px 0px;
+        font-size: 1rem;
+    }
+    .task-summary{
+        width: 100%;
+    }
+    #delete-all-btn{
+        width: 5rem;
+        margin-left: 14px;
+    }
+}
+
+@media (max-width: 260px) {
+    h2{
+        font-size: .8rem;
+    }
+    span{
+        font-size: .8rem;
+    }
+    .task {
+        flex-direction: column;
+    }
+    .section{
+        width: 100%;
+    }
+
+    .task-in p {
+        width: 95%;
+        margin: 3px 0px;
+        height: 1.5rem;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .edit-btn::before,
+    .del-btn::before,
+    .save-btn::before {
+        width: 0.8rem;
+        height: 0.8rem;
+        transform: translate(-8px, -7px);
+    }
+    #input-text{
+        width: auto;
+        margin: 7px;
+        padding: 0px 12px;
+        font-size: .8rem;
+    }
+    h1 {
+        padding: 0rem;
+        width: 22rem;
+    }
+
+    .edit-btn,
+    .del-btn,
+    .save-btn {
+        margin: 0;
+        height: 3rem;
+        width: 3rem;
+    }
+    .sub-btn{
+        padding: 0;
+        height: 1.3rem;
+        width: 4rem;
+        font-size: .7rem;
+        margin: auto;
+    }
+    .task-summary{
+        width: 0px;
+    }
+    #delete-all-btn{
+        width: 5rem;
+        margin-left: 14px;
+    }
+}
